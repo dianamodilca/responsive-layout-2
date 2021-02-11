@@ -1,0 +1,360 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 50%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    background-image: url('../assets/bg-header.jpg');
+    background-size: cover;
+    background-position: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 25%;
+    padding: 20px;
+}
+
+
+.social-media-wrapper{
+    background-color: #2b2b2b;
+    width: 20%;
+    height: 60%;
+    padding: 20px;
+}
+
+.website-wrapper{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.vertical-line-wrapper{
+    border-bottom: 1px solid #fff;
+    width: 30px;
+    transform: rotate(90deg);
+}
+
+.insta-wrapper{
+    padding-top: 15%;
+    padding-left: 3%;
+}
+
+.fb-wrapper{
+    padding-top: 10%;
+    padding-left: 3%;
+}
+
+.title-wrapper{
+    position: absolute;
+    bottom: 30%;
+    right: 7%;
+    margin: 0; 
+    font-size: 70px;
+}
+
+.desktop-main{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 1200px;
+}
+
+.desktop-image-wrapper{
+    width: 33.3333%;
+    height: 50%;
+    position: relative;
+}
+
+
+.desktop-main div img{
+    width: 100%;
+    height: 100%;  
+} 
+
+.text-top-left-wrapper{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    width: 150px;
+}
+
+.text-bottom-left-wrapper{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    transform: rotate(-90deg);
+}
+
+footer{
+    background-color: #2b2b2b;
+    height: auto;
+    width: 100%;
+}
+
+.more-proj-wrapper{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 45%;
+}
+
+.more-proj-wrapper button{
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.get-in-touch-wrapper{
+    color: #fff;
+    padding-left: 35%;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.orange-text-wrapper{
+    color: #c09c78;
+}
+
+.get-in-touch-wrapper, .orange-text-wrapper{
+    display: inline;
+}
+
+.form-wrapper{
+    padding: 20px;
+    padding-left: 30%;
+}
+
+form{
+    padding: 20px;
+    width: 40%;
+    position: relative;
+    padding-right: 0;
+}
+
+.name-wrapper, .phone-wrapper{
+    width: 400px;
+    display: inline;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.email-wrapper, .company-wrapper{
+    width: 400px;
+    display: inline;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+  
+input{
+    height: 40px;
+    background-color: #3d3d3d;  
+}
+
+input::placeholder{
+    color: #fff;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+textarea{
+    background-color: #3d3d3d;
+    color: #fff;
+    position: absolute;
+    left: 100%;
+    top: 10%;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.submit-wrapper{
+    padding-top: 30px;
+    padding-left: 50%;
+    height: 50px;
+    width: 150px;
+}
+
+.submit-button{
+    background-color: #c09c78;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    color:#3d3d3d;
+    justify-content: center;
+    text-align: end;
+    padding-right: 0;
+}
+
+.mobile-main{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    display: none; 
+}
+
+.mobile-image-wrapper{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.mobile-image-wrapper img{
+    width: 100%;
+    height: 100%;  
+    
+} 
+
+.mobile-title-picture-wrapper{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 25%;
+    font-size: 20px;
+}
+
+.mobile-description-picture-wrapper{
+    position: absolute;
+    color: #fff;
+    top: 45%;
+    left: 40%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    height: 30px;
+}
+
+.mobile-text-area-wrapper{
+    display:none;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    header{
+        height: 30%;
+    }
+
+    .social-media-wrapper{
+        width: 25%;
+        height: 50%;
+    }
+
+    .website-wrapper{
+        font-size: 20px;
+    }
+    
+    .vertical-line-wrapper{
+        width: 20px;
+    }
+
+    .insta-wrapper{
+        font-size: 15px;
+    }
+    
+    .fb-wrapper{
+        font-size: 15px;
+        padding-top: 5%;
+    }
+
+    .title-wrapper{
+        position: absolute;
+        bottom: 5px;
+        right: 20%;
+        margin: 0; 
+        font-size: 60px;
+    }
+
+    .desktop-main{
+        display: none;
+    }
+
+    .mobile-main{
+        display: block;
+    }
+    
+    .more-proj-wrapper{
+        display: none;
+    }
+
+    .get-in-touch-wrapper{
+        padding-left: 20%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-wrapper{
+        padding-left: 0;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .email-wrapper, .company-wrapper{
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    form div{
+        padding-bottom: 50px;
+    }
+
+    input{
+        width: 100%;
+        border: none;
+    }
+
+    .mobile-text-area-wrapper{
+        display: block;
+        
+    }
+
+    .desktop-text-area-wrapper{
+        display: none;
+    }
+
+    textarea{
+        position: static;
+        border: none;
+    }
+
+    .submit-button{
+        font-size: 15px;
+    }
+}
