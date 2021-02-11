@@ -10,9 +10,11 @@
         <meta name="author" content="Diana Modilca">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Best Escapes</title>
+        <!-- acest fisier css apartine unei librarii, fontawesome. Este ok sa avem un folder pentru fiecare librarie pe care o folosim, altfel devine haotic foarte rapid inca de la a 2 a librarie adaugata -->
         <link href="bundles/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="resources/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- este ok sa incarcam resursa asta inainte sa o folosim la noi in css -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
     </head>
@@ -45,10 +47,14 @@
         
             <section>
                 <main class="desktop-main"> 
+                    <!-- iti adaug un exemplu aici pentru layer-ul de opacity. atentie, trebuie adaugat la fiecare si structura trebuie sa fie aceeasi -->
                     <div class="desktop-image-wrapper">
-                        <img src="./assets/concert-hall.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">CONCERT HALL IN NEW YORK</div>
-                        <div class="text-bottom-left-wrapper">ARCHITECTURE</div>
+                        <div class="overlay"></div>
+                        <div class="content-wrapper">
+                            <img src="./assets/concert-hall.jpg" alt="Girl in a jacket">
+                            <div class="text-top-left-wrapper">CONCERT HALL IN NEW YORK</div>
+                            <div class="text-bottom-left-wrapper">ARCHITECTURE</div>
+                        </div>
                     </div>
                     <div class="desktop-image-wrapper">
                         <img src="./assets/bedroom-2.jpg" alt="Girl in a jacket">
@@ -78,6 +84,7 @@
                 </main>
             </section>
 
+            <!-- tehnica aceasta nu mai este optima in acest caz, avem doar de modificat pozitia a 2 elemente de interfata, nu merita sa avem atat cod duplicat. cum am zis, daca se pune problema sa refacem site-ul nu mai merge metoda content switch -->
            <!-- mobile main -->
            <main class="mobile-main">
                 <div class="mobile-image-wrapper">
@@ -133,6 +140,7 @@
                     <div class="orange-text-wrapper">IN TOUCH</div>
                 </div>
                 <div class="form-wrapper">
+                    <!-- aici se pot folosi doar div-uri pentru a grupa ce anume ai nevoie ca sa respoecti layout-ul. nicidecum pozitionarea nu este o solutie ok aici, ai nenumarate alte posibilitati -->
                     <form>
                         <div class="name-wrapper">
                             <input autofocus required class="input-validation" type="text" name="name_input" id="nameInput" placeholder="Name" minlength="5"/>

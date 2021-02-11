@@ -77,7 +77,25 @@ nav {
     position: relative;
 }
 
+.desktop-image-wrapper .overlay,
+.desktop-image-wrapper .content-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
+.desktop-image-wrapper .overlay {
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.desktop-image-wrapper .content-wrapper {
+    z-index: 1;
+}
+
+/* imaginile nu sunt scalabile asa, te sfatuiesc sa folosesti un wrapper */
 .desktop-main div img{
     width: 100%;
     height: 100%;  
@@ -232,6 +250,7 @@ textarea{
 } 
 
 .mobile-title-picture-wrapper{
+    /* iar aici ai nevoie doar de o simpla centrare, nu ai nevoie de pozitionare pt asta */
     position: absolute;
     color: #fff;
     top: 35%;
