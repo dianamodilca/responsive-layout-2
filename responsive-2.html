@@ -3,20 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <!-- Define a description for the web page -->
-        <meta name="description" content="Escapes">
+        <meta name="description" content="architecture">
         <!-- Define keywords for search engine to process -->
-        <meta name="keywords" content="Escapes, offers, travel, holiday">
+        <meta name="keywords" content="Architecture, projects, modern">
         <!-- Define the author of the page -->
         <meta name="author" content="Diana Modilca">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Best Escapes</title>
-        <!-- acest fisier css apartine unei librarii, fontawesome. Este ok sa avem un folder pentru fiecare librarie pe care o folosim, altfel devine haotic foarte rapid inca de la a 2 a librarie adaugata -->
-        <link href="bundles/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="resources/main.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- este ok sa incarcam resursa asta inainte sa o folosim la noi in css -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <title>Architectural projects</title>
 
+        <link href="bundles/font-awesome/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
     </head>
 
     <body>
@@ -46,90 +44,69 @@
         </header>
         
             <section>
-                <main class="desktop-main"> 
-                    <!-- iti adaug un exemplu aici pentru layer-ul de opacity. atentie, trebuie adaugat la fiecare si structura trebuie sa fie aceeasi -->
-                    <div class="desktop-image-wrapper">
+                <main class="main"> 
+                    <div class="image-wrapper">
                         <div class="overlay"></div>
-                        <div class="content-wrapper">
-                            <img src="./assets/concert-hall.jpg" alt="Girl in a jacket">
-                            <div class="text-top-left-wrapper">CONCERT HALL IN NEW YORK</div>
-                            <div class="text-bottom-left-wrapper">ARCHITECTURE</div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/concert-hall.jpg" alt="Concert hall">
                         </div>
+                        <div class="title-picture-wrapper">CONCERT HALL 
+                            <div>IN NEW YORK</div>
+                        </div>
+                        <div class="description-picture-wrapper">ARCHITECTURE</div>
                     </div>
-                    <div class="desktop-image-wrapper">
-                        <img src="./assets/bedroom-2.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">MODERN BEDROOM IN GORIZIA</div>
-                        <div class="text-bottom-left-wrapper">INTERIOR</div>
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/bedroom-2.jpg" alt="Modern bedroom">
+                        </div>
+                        <div class="title-picture-wrapper">MODERN BEDROOM 
+                            <div>IN GORIZIA</div>
+                        </div>
+                        <div class="description-picture-wrapper">INTERIOR</div>
                     </div>
-                    <div class="desktop-image-wrapper">
-                        <img src="./assets/hotel.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">MODERN HOTEL IN LONDON</div>
-                        <div class="text-bottom-left-wrapper">ARCHITECTURE</div>
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/hotel.jpg" alt="Modern hotel">
+                        </div>
+                        <div class="title-picture-wrapper">MODERN HOTEL 
+                            <div>IN LONDON</div>
+                        </div>
+                        <div class="description-picture-wrapper">ARCHITECTURE</div>
                     </div>
-                    <div class="desktop-image-wrapper">
-                        <img src="./assets/bedroom-1.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">MODERN BEDROOM IN PARIS</div>
-                        <div class="text-bottom-left-wrapper">INTERIOR</div>
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/bedroom-1.jpg" alt="Modern bedroom">
+                        </div>
+                        <div class="title-picture-wrapper">MODERN BEDROOM 
+                            <div>IN PARIS</div>
+                        </div>
+                        <div class="description-picture-wrapper">INTERIOR</div>
                     </div>
-                    <div class="desktop-image-wrapper">
-                        <img src="./assets/library.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">MODERN LIBRARY IN CHICAGO</div>
-                        <div class="text-bottom-left-wrapper">ARCHITECTURE</div>
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/library.jpg" alt="Modern library">
+                        </div>
+                        <div class="title-picture-wrapper">MODERN LIBRARY 
+                            <div>IN CHICAGO</div>
+                        </div>
+                        <div class="description-picture-wrapper">ARCHITECTURE</div>
                     </div>
-                    <div class="desktop-image-wrapper">
-                        <img src="./assets/kitchen.jpg" alt="Girl in a jacket">
-                        <div class="text-top-left-wrapper">MODERN KITCHEN IN BUCHAREST</div>
-                        <div class="text-bottom-left-wrapper">INTERIOR</div>
+                    <div class="image-wrapper">
+                        <div class="overlay"></div>
+                        <div class="image-content-wrapper">
+                            <img src="./assets/kitchen.jpg" alt="Modern kitchen">
+                        </div>
+                        <div class="title-picture-wrapper">MODERN KITCHEN 
+                            <div>IN BUCHAREST</div>
+                        </div>
+                        <div class="description-picture-wrapper">INTERIOR</div>
                     </div>
                 </main>
             </section>
-
-            <!-- tehnica aceasta nu mai este optima in acest caz, avem doar de modificat pozitia a 2 elemente de interfata, nu merita sa avem atat cod duplicat. cum am zis, daca se pune problema sa refacem site-ul nu mai merge metoda content switch -->
-           <!-- mobile main -->
-           <main class="mobile-main">
-                <div class="mobile-image-wrapper">
-                    <img src="./assets/concert-hall.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">CONCERT HALL 
-                        <div class="orange-text-wrapper">IN NEW YORK</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">ARCHITECTURE</div>
-                </div>
-                <div class="mobile-image-wrapper">
-                    <img src="./assets/bedroom-2.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">MODERN BEDROOM  
-                        <div class="orange-text-wrapper">IN GORIZIA</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">INTERIOR</div>
-                </div>
-                <div class="mobile-image-wrapper">
-                    <img src="./assets/hotel.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">MODERN HOTEL   
-                        <div class="orange-text-wrapper">IN LONDON</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">ARCHITECTURE</div>
-                </div>
-                <div class="mobile-image-wrapper"> 
-                    <img src="./assets/bedroom-1.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">MODERN BEDROOM   
-                        <div class="orange-text-wrapper">IN PARIS</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">INTERIOR</div>
-                </div>
-                <div class="mobile-image-wrapper">
-                    <img src="./assets/library.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">MODERN LIBRARY   
-                        <div class="orange-text-wrapper">IN CHICAGO</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">ARCHITECTURE</div>
-                </div>
-                <div class="mobile-image-wrapper">
-                    <img src="./assets/kitchen.jpg" alt="Girl in a jacket">
-                    <div class="mobile-title-picture-wrapper">MODERN KITCHEN   
-                        <div class="orange-text-wrapper">IN BUCHAREST</div>
-                    </div>
-                    <div class="mobile-description-picture-wrapper">INTERIOR</div>
-                </div>
-           </main>
 
             <footer>  
                 <div class="more-proj-wrapper">
@@ -140,30 +117,36 @@
                     <div class="orange-text-wrapper">IN TOUCH</div>
                 </div>
                 <div class="form-wrapper">
-                    <!-- aici se pot folosi doar div-uri pentru a grupa ce anume ai nevoie ca sa respoecti layout-ul. nicidecum pozitionarea nu este o solutie ok aici, ai nenumarate alte posibilitati -->
                     <form>
-                        <div class="name-wrapper">
-                            <input autofocus required class="input-validation" type="text" name="name_input" id="nameInput" placeholder="Name" minlength="5"/>
-                        </div>
-        
-                        <div class="phone-wrapper">
-                            <input required class="input-validation" type="text" name="phone_input" id="phoneInput" placeholder="Phone" length="10"/>   
-                        </div>
-        
-                        <div class="email-wrapper">   
-                            <input required class="input-validation" type="email" name="email_input" id="emailInput" placeholder="Email" />
-                        </div>
+                        <div class="form-content-wrapper">
 
-                        <div class="company-wrapper">
-                            <input required class="input-validation" type="text" name="company_input" id="companyInput" placeholder="Company" />
-                        </div>
-                    
-                        <div class="desktop-text-area-wrapper">
-                            <textarea required class="input-validation" id="textarea" rows="4" cols="50" minlength="50" maxlength="250">Message</textarea>
-                        </div>
+                            <div class="first-row-form-wrapper">
+                                <div class="name-wrapper">
+                                    <input autofocus required class="input-validation" type="text" name="name_input" id="nameInput" placeholder="Name" minlength="5"/>
+                                </div>
+                                <div class="email-wrapper">   
+                                    <input required class="input-validation" type="email" name="email_input" id="emailInput" placeholder="Email" />
+                                </div>
+                               
+                            </div>
 
-                        <div class="mobile-text-area-wrapper">
-                            <textarea required class="input-validation" id="textarea" rows="4" cols="50" minlength="50" maxlength="250">Message</textarea>
+                            <div class="second-row-form-wrapper">
+                                <div class="phone-wrapper">
+                                    <input required class="input-validation" type="text" name="phone_input" id="phoneInput" placeholder="Phone" length="10"/>   
+                                </div>
+                                <div class="company-wrapper">
+                                    <input required class="input-validation" type="text" name="company_input" id="companyInput" placeholder="Company" />
+                                </div>
+                            </div>
+
+                            <div class="desktop-text-area-wrapper">
+                                <textarea required class="input-validation" id="textarea" rows="6" cols="20" minlength="50" maxlength="250" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="mobile-text-area-wrapper">
+                                <textarea required class="input-validation" id="textarea" rows="5" cols="50" minlength="50" maxlength="250" placeholder="Message"></textarea>
+                            </div>
+
                         </div>
 
                         <div class="submit-wrapper">
