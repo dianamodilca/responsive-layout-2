@@ -368,7 +368,7 @@ textarea::placeholder{
     .title-wrapper{
         position: absolute;
         bottom: 5px;
-        right: 20%;
+        right: 10%;
         margin: 0; 
         font-size: 60px;
     }
@@ -466,8 +466,4 @@ textarea::placeholder{
 /* Utils classes */
 .hidden {
     display: none;
-}
-
-.visible {
-    display: block;
 }

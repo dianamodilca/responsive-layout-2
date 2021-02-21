@@ -18,36 +18,39 @@
     </head>
 
     <body>
-        <header id="headerWrapper" class="header-wrapper general-wrapper visible ">
-            <div class="social-media-wrapper">
-                <div class="website-wrapper">go.arch</div>
-                <div class="vertical-line-wrapper"></div>
-                <div class="insta-wrapper">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="fb-wrapper">
-                    <i class="fab fa-facebook-f"></i> 
-                </div>
-            </div>   
-            <nav class="menu-desktop">
-                <a>HOME</a>
-                <a>ABOUT US</a>
-                <a>PROJECTS</a>
-                <a>BLOG</a>
-                <a>CONTACT US</a>
-            </nav>    
-              <!-- mobile menu  -->
-            <nav class="menu-mobile">
-                <button id="mobileMenuButton" class="sandwich-menu-button" type="text">
-                    <div>
-                        <i class="fas fa-bars"></i>
+
+        <div id="mainPageWrapper">
+
+            <header class="header-wrapper">
+                <div class="social-media-wrapper">
+                    <div class="website-wrapper">go.arch</div>
+                    <div class="vertical-line-wrapper"></div>
+                    <div class="insta-wrapper">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                </button>
-            </nav>
-            <div class="title-wrapper">PROJECTS</div>
-        </header>
+                    <div class="fb-wrapper">
+                        <i class="fab fa-facebook-f"></i> 
+                    </div>
+                </div>   
+                <nav class="menu-desktop">
+                    <a>HOME</a>
+                    <a>ABOUT US</a>
+                    <a>PROJECTS</a>
+                    <a>BLOG</a>
+                    <a>CONTACT US</a>
+                </nav>    
+                <!-- mobile menu  -->
+                <nav class="menu-mobile">
+                    <button id="mobileMenuButton" class="sandwich-menu-button" type="text">
+                        <div>
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </button>
+                </nav>
+                <div class="title-wrapper">PROJECTS</div>
+            </header>
         
-            <section id="firstPageMobile" class="main-section-wrapper general-wrapper visible ">
+            <section class="main-section-wrapper">
                 <main class="main"> 
                     <div class="image-wrapper">
                         <div class="overlay"></div>
@@ -112,36 +115,7 @@
                 </main>
             </section>
 
-            <!-- sugerez sa lucrezi pe layere cu aceste sectiuni -->
-            <section id="innerMobileMenuSection" class="mobile-menu-wrapper hidden">
-                <div class="mobile-menu-inner-wrapper">
-                   <div class="inner-menu-mobile-header-wrapper">
-                       go.arch 
-                        <button id="mobileCloseMenuButton" class="close-menu-button" type="text">
-                            <div></div>
-                        </button>
-                   </div>
-                    <main>
-                        <div>Home</div>
-                        <div>About us</div>
-                        <div>Projects</div>
-                        <div>Blog</div>
-                        <div>Contact us</div>
-                    </main>
-                    <footer>
-                        <div class="inner-menu-mobile-footer-wrapper">
-                            <div class="inner-menu-mobile-insta-wrapper">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                            <div class="inner-menu-mobile-fb-wrapper">
-                                <i class="fab fa-facebook-f"></i> 
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-            </section>
-
-            <footer id="footerWrapper" class="header-wrapper general-wrapper visible ">  
+            <footer class="header-wrapper">  
                 <div class="more-proj-wrapper">
                     <button type="button">MORE PROJECTS</button>
                 </div>
@@ -191,6 +165,36 @@
                     </form>
                 </div>
             </footer>
+
+        </div>
+
+        <section id="innerMobileMenuSection" class= "mobile-menu-wrapper hidden">
+            <div class="mobile-menu-inner-wrapper">
+                <div class="inner-menu-mobile-header-wrapper">
+                    go.arch 
+                    <button id="mobileCloseMenuButton" class="close-menu-button" type="text">
+                        <div></div>
+                    </button>
+                </div>
+                <main>
+                    <div>Home</div>
+                    <div>About us</div>
+                    <div>Projects</div>
+                    <div>Blog</div>
+                    <div>Contact us</div>
+                </main>
+                <footer>
+                    <div class="inner-menu-mobile-footer-wrapper">
+                        <div class="inner-menu-mobile-insta-wrapper">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="inner-menu-mobile-fb-wrapper">
+                            <i class="fab fa-facebook-f"></i> 
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
 
         <script src="resources/main.js"></script>
         
